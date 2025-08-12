@@ -1,0 +1,29 @@
+cargo=input("escreva o cargo do funcionario(gerente,analista,estagiario:")
+ 
+dia_semana = input ("digite o dia da semana:")
+
+if cargo =="gerente":
+    print ("gerente tem acesso quando ele quiser: ")
+   
+elif cargo == "analista":
+    if dia_semana == "segunda feira" or dia_semana == "terça feira" or dia_semana == "quarta feira" or dia_semana == "quinta feira" or dia_semana == "sexta feira":
+
+        print ("acesso permitido analista so tem acesso na semana:")
+       
+    else:
+       
+        print ("acesso negado analista não tem acesso nos finais de semana:")
+       
+elif cargo == "estagiario":
+   
+    if dia_semana == "segunda feira" or dia_semana == "quinta feira:" or dia_semana == "sexta feira":
+       
+        print ("acesso permitido estagiario so tem acesso de 3 em 3 dias da semana :")
+         
+    else:
+       
+        print("acesso negado estagiario não pode entrar nesse dia:")
+       
+else:
+   
+    print ("cargo não encontrado acesso negado:")
